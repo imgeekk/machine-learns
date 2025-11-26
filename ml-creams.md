@@ -321,6 +321,8 @@ Feature Extraction techinques -</br></br>
 
   - In the above image you see we considered $\large m$ as constant and took only $\large b$ as a variable. Therefore in each iteration we were taking new values of $\large b$ with $\large b_{new} = b_{old} - \eta * slope$ where slope was calculated by differentiating the cost function ***with respect to $\large b$***
   - But if you take both $\large m$ and $\large b$ as variables, then in each iteration you will have to calculated new values for values for both $\large m$ and $\large b$ using $(\large b_{new} = b_{old} - \eta * slope)$ and $(\large m_{new} = m_{old} - \eta * slope)$ where the slope inside $b$ eqn is calculated by $\huge \frac{\partial L}{\partial b}$ and the slope inside $m$ eqn is calculated by $\huge \frac{\partial L}{\partial m}$.
+  - $\huge \frac{\partial L}{\partial b} = -2 \sum_{i=1}^n(y_i - mx_i - b)(-1)$</br></br>
+  - $\huge \frac{\partial L}{\partial m} = -2 \sum_{i=1}^n(y_i - mx_i - b)(-x_i)$
   - Here we are taking partial derivatives because there are two variables now $\large m$ and $\large b$
   </br></br>
     ### Effect of learning rate $\large \eta$
@@ -338,3 +340,13 @@ Feature Extraction techinques -</br></br>
   - Feature scaling must be done before
   - If the features are scaled then the convergence will be faster
   - <img src="images/image21.png" width="600px"></br></br>
+
+    ### Types of gradient descent
+  ### 1. <u>Batch gradient descent</u>
+     - This the basic gradient descent
+     - We use the entire dataset to calculate the update in each iteration
+  ### 2. <u>Stochastic gradient descent</u>
+     - Batch gradient descent was 1 update per epoch
+     - Stochastic gd is $n$ updates ($n$ rows) per epoch
+  ### 3. <u>Mini-batch gradient descent</u>
+     - Here $n$ rows are made into batches. So epochs are per batch
