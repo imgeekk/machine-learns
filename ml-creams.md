@@ -352,4 +352,7 @@ Feature Extraction techinques -</br></br>
      - Here $n$ rows are made into batches. So epochs are per batch
   </br></br></br>
   ## Polynomial Regression
-  - ![alt](/images/image22.png)
+  - ![polynomial regression](/images/image22.png)
+  </br></br></br>
+  ## Bias/Variance trade off
+  - ![bias/variance trade off](/images/image23.png)
