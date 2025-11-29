@@ -342,11 +342,14 @@ Feature Extraction techinques -</br></br>
   - <img src="images/image21.png" width="600px"></br></br>
 
     ### Types of gradient descent
-  ### 1. <u>Batch gradient descent</u>
+    ### 1. <u>Batch gradient descent</u>
      - This the basic gradient descent
      - We use the entire dataset to calculate the update in each iteration
-  ### 2. <u>Stochastic gradient descent</u>
+    ### 2. <u>Stochastic gradient descent</u>
      - Batch gradient descent was 1 update per epoch
      - Stochastic gd is $n$ updates ($n$ rows) per epoch
-  ### 3. <u>Mini-batch gradient descent</u>
+    ### 3. <u>Mini-batch gradient descent</u>
      - Here $n$ rows are made into batches. So epochs are per batch
+  </br></br></br>
+  ## Polynomial Regression
+  - ![alt](/images/image22.png)
